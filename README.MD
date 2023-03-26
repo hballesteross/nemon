@@ -1,12 +1,13 @@
 # Correr composer install
- 
+
 La app inicia desde index.php. En el campo de texto se realiza la consulta. En este caso decidi utilizar BING como buscador
 Hay que buscar la lista con la clase "b_algo" que es donde lista los resultados. 
 Con el paquete Goutte filtramos la request y buscamos por esa clase y luego obtenemos las URL de donde sacamos los dominios.
 Luego se almacenan los dominios en una tabla de una base de datos MYSQL la cual se conecta desde db.php con una clase.
 El resultado es mostrado en una tabla y para la UI en general del sitio para realizar algo rapido se utilizo bootstrap desde CDN.
 
-
+! Hosting fix: Se cambio la consulta que limpia la tabla de la base de truncate table a delete por tema de permisos de usuario en 
+hosting. EN localhost funciona con el truncate sin problemas. Depende de la configuracion del usuario de la bas de datos.
 
 
 
